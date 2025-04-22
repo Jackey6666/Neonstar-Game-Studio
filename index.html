@@ -49,31 +49,37 @@
       background: #444;
     }
 
+    .video-section {
+      margin-top: 60px;
+    }
+
+    .video-section video {
+      width: 90%;
+      max-width: 720px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
     .scroll-indicator {
+      margin-top: 80px;
       font-size: 2rem;
-      margin-top: 40px;
+      border: 2px solid white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
       animation: float 1.6s ease-in-out infinite;
-      color: #aaa;
-      opacity: 0.6;
+      opacity: 0.7;
     }
 
     @keyframes float {
       0% { transform: translateY(0); opacity: 0.6; }
       50% { transform: translateY(10px); opacity: 1; }
       100% { transform: translateY(0); opacity: 0.6; }
-    }
-
-    .video-section {
-      margin-top: 60px;
-    }
-
-    .video-section iframe {
-      width: 90%;
-      max-width: 720px;
-      height: 405px;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.1);
     }
 
     .footer {
@@ -89,9 +95,6 @@
   <div class="subtitle">JackeyChen Game</div>
   <p>Hi, Welcome to this Linktree of the Neonstar Game Studio's Game, I'm Jackey. Here is all the link you can know about me and my game. I'm the producer and developer of the first person horror game NO MORE DEEP. A UE5 generalist, A Technique Artist, An animator, A one-man-army game developer.</p>
 
-  <!-- Scroll Down Arrow -->
-  <div class="scroll-indicator">⬇️</div>
-
   <!-- Links -->
   <a class="link-button" href="https://store.steampowered.com/app/3434670/No_More_Deep/" target="_blank">🖤 NO MORE DEEP on Steam</a>
   <a class="link-button" href="https://www.linkedin.com/in/jackey-chen-b275452ab" target="_blank">💼 JackeyChen's LinkedIn</a>
@@ -102,10 +105,16 @@
   <a class="link-button" href="https://www.xiaohongshu.com/user/profile/5d3fb3030000000011034e5f" target="_blank">📱 Xiaohongshu 小红书</a>
   <a class="link-button" href="https://space.bilibili.com/3546819657206261" target="_blank">📺 Bilibili</a>
 
-  <!-- Embedded YouTube Video -->
+  <!-- Embedded Video (local file) -->
   <div class="video-section">
-    <iframe src="https://www.youtube.com/watch?v=ADRbF_QmRXo&t=16s" title="NO MORE DEEP Trailer" allowfullscreen></iframe>
+    <video controls>
+      <source src="assets/NoMoreDeep_Trailer.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
+
+  <!-- Scroll Down Indicator -->
+  <div class="scroll-indicator">⬇️</div>
 
   <div class="footer">
     © 2025 Neonstar Game Studio
