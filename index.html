@@ -57,15 +57,28 @@
     }
 
     .video-section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 20px;
-      color: #ccc;
+      font-size: 2rem;
+      margin-bottom: 0.5em;
     }
 
-    .video-section iframe {
-      width: 90%;
-      max-width: 720px;
-      height: 480px;
+    .video-section .description {
+      font-size: 1.1rem;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto 2em auto;
+    }
+
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .video-grid iframe {
+      width: 100%;
+      max-width: 640px;
+      height: 360px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(255,255,255,0.1);
     }
@@ -99,14 +112,28 @@
 
   <!-- Video Section -->
   <div class="video-section">
-    <h2>Watch Demo</h2>
-    <iframe 
-      src="https://www.youtube.com/embed/zRhOfOY29mY" 
-      title="NO MORE DEEP Demo Video"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
+    <h2>No More Deep Demo Show</h2>
+    <div class="description">
+      No More Deep is a first-person horror shooter game built in Unreal Engine 5. I began development in August last year, and by April this year, 
+      I had completed around 2–3 hours of playable content. The following demo scenes are from Chapter 1 of the game, which follows the story of Jack 
+      returning to his hometown plagued by the so-called “Insectoids.”
+    </div>
+    <div class="video-grid">
+      <iframe 
+        src="https://www.youtube.com/embed/zRhOfOY29mY" 
+        title="NO MORE DEEP Demo Part 1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <iframe 
+        src="https://www.youtube.com/embed/ADRbF_QmRXo" 
+        title="NO MORE DEEP Demo Part 2"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
   </div>
 
   <div class="footer">
@@ -115,3 +142,4 @@
 
 </body>
 </html>
+
