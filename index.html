@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Neonstar Game Studio | Links</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -28,7 +29,13 @@
 
     p {
       font-size: 1.1rem;
+      margin-bottom: 1em;
+    }
+
+    .contact-info {
       margin-bottom: 2em;
+      color: #ccc;
+      font-size: 0.95rem;
     }
 
     .link-button {
@@ -45,12 +52,30 @@
       border: 1px solid #444;
     }
 
+    .link-button i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+      vertical-align: middle;
+    }
+
     .link-button:hover {
       background: #444;
     }
 
+    .scroll-hint {
+      margin-top: 60px;
+      font-size: 1rem;
+      color: #bbb;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+
     .video-section {
-      margin-top: 100px;
+      margin-top: 80px;
       padding: 40px 20px;
       background: linear-gradient(180deg, #111, #1a1a1a);
       color: white;
@@ -99,42 +124,40 @@
     Here is all the link you can know about me and my game. I'm the producer and developer of the first person horror game 
     NO MORE DEEP. A UE5 generalist, A Technique Artist, An animator, A one-man-army game developer.
   </p>
-
-<p style="margin-top: -1.5em; font-size: 1rem; color: #ccc;">
-  📧 Email: <a href="mailto:jackey102938@gmail.com" style="color: #ccc; text-decoration: underline;">jackey102938@gmail.com</a><br>
-  📱 Phone: <a href="tel:+14372326239" style="color: #ccc; text-decoration: underline;">+1 437 232 6239</a>
-</p>
+  <div class="contact-info">
+    📧 jackey102938@gmail.com &nbsp;&nbsp;&nbsp; 📞 +1 437 232 6239
+  </div>
 
   <!-- Links -->
-  <a class="link-button" href="https://store.steampowered.com/app/3434670/No_More_Deep/" target="_blank">🖤 NO MORE DEEP on Steam - Add Wishlist</a>
-  <a class="link-button" href="https://www.linkedin.com/in/jackey-chen-b275452ab" target="_blank">💼 JackeyChen's LinkedIn</a>
-  <a class="link-button" href="https://www.artstation.com/jackeychen009" target="_blank">🎨 Jackey's Artstation - See my works</a>
-  <a class="link-button" href="https://www.youtube.com/@JACKEYCHENGAME" target="_blank">📹 YouTube - See Demo video of NO MORE DEEP</a>
-  <a class="link-button" href="https://www.instagram.com/neonstar_game_studio/" target="_blank">📷 Instagram - See the events of the game</a>
-  <a class="link-button" href="https://discord.gg/2y72mhNe" target="_blank">💬 Join NO MORE DEEP on Discord</a>
-  <a class="link-button" href="https://www.xiaohongshu.com/user/profile/5d3fb3030000000011034e5f" target="_blank">📱 Xiaohongshu 小红书</a>
-  <a class="link-button" href="https://space.bilibili.com/3546819657206261" target="_blank">📺 Bilibili</a>
+  <a class="link-button" href="https://store.steampowered.com/app/3434670/No_More_Deep/" target="_blank">
+    <i class="fab fa-steam"></i> NO MORE DEEP on Steam - Add Wishlist
+  </a>
+  <a class="link-button" href="https://www.linkedin.com/in/jackey-chen-b275452ab" target="_blank">
+    <i class="fab fa-linkedin"></i> JackeyChen's LinkedIn
+  </a>
+  <a class="link-button" href="https://www.artstation.com/jackeychen009" target="_blank">
+    <i class="fab fa-artstation"></i> Jackey's Artstation - See my works
+  </a>
+  <a class="link-button" href="https://www.youtube.com/@JACKEYCHENGAME" target="_blank">
+    <i class="fab fa-youtube"></i> YouTube - See Demo video of NO MORE DEEP
+  </a>
+  <a class="link-button" href="https://www.instagram.com/neonstar_game_studio/" target="_blank">
+    <i class="fab fa-instagram"></i> Instagram - See the events of the game
+  </a>
+  <a class="link-button" href="https://discord.gg/2y72mhNe" target="_blank">
+    <i class="fab fa-discord"></i> Join NO MORE DEEP on Discord
+  </a>
+  <a class="link-button" href="https://www.xiaohongshu.com/user/profile/5d3fb3030000000011034e5f" target="_blank">
+    📱 Xiaohongshu 小红书
+  </a>
+  <a class="link-button" href="https://space.bilibili.com/3546819657206261" target="_blank">
+    📺 Bilibili
+  </a>
 
-<!-- Scroll Down Prompt to Demo Section -->
-<div style="margin: 60px 0 40px 0;">
-  <div style="
-    animation: fadeDown 2s infinite;
-    font-size: 1.2rem;
-    color: #ccc;
-    opacity: 0.6;">
-    ↓ Scroll down to watch the demo
-  </div>
-</div>
+  <!-- Scroll hint -->
+  <div class="scroll-hint">▼ Scroll down to see demo videos ▼</div>
 
-<style>
-@keyframes fadeDown {
-  0%, 100% { opacity: 0.3; transform: translateY(0); }
-  50% { opacity: 1; transform: translateY(8px); }
-}
-</style>
-
-
-  <!-- Demo Video Section -->
+  <!-- Video Section -->
   <div class="video-section">
     <h2>No More Deep Demo Show</h2>
     <div class="description">
@@ -143,49 +166,23 @@
       returning to his hometown plagued by the so-called “Worm-men.”
     </div>
     <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/ADRbF_QmRXo" title="NO MORE DEEP Demo Part 1" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/zRhOfOY29mY" title="NO MORE DEEP Demo Part 2" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/ADRbF_QmRXo" title="NO MORE DEEP Demo Part 1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/zRhOfOY29mY" title="NO MORE DEEP Demo Part 2" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 
-<!-- Scroll Down Prompt to Demo Section -->
-<div style="margin: 60px 0 40px 0;">
-  <div style="
-    animation: fadeDown 2s infinite;
-    font-size: 1.2rem;
-    color: #ccc;
-    opacity: 0.6;">
-    ↓ Scroll down to watch the CG Cutscenes
-  </div>
-</div>
-
-<style>
-@keyframes fadeDown {
-  0%, 100% { opacity: 0.3; transform: translateY(0); }
-  50% { opacity: 1; transform: translateY(8px); }
-}
-</style>
-
-
-  <!-- Cutscene Section -->
+  <!-- Cutscenes Section -->
   <div class="video-section">
-    <h2>Cinematic Cutscenes Showreel</h2>
+    <h2>Cutscenes Collection</h2>
     <div class="description">
-      A collection of cinematic sequences I directed and animated as part of the NO MORE DEEP project. These cutscenes demonstrate my animation, camera, and narrative design skills as an aspiring game animator.
+      These are animated in-game cutscenes I created for NO MORE DEEP using FK control rigs, sequencer, and motion capture workflows.
     </div>
     <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/mqs1Ie-4mSc" title="CG 1" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/1sYCDrBxmQI" title="CG 2" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/-yi7IgZHQTs" title="CG 3" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/wvhTEIZW2X8" title="CG 4" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/sdodcVC004E" title="CG 5" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/mqs1Ie-4mSc" title="Cutscene 1" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/1sYCDrBxmQI" title="Cutscene 2" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/-yi7IgZHQTs" title="Cutscene 3" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/wvhTEIZW2X8" title="Cutscene 4" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/sdodcVC004E" title="Cutscene 5" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 
@@ -195,5 +192,3 @@
 
 </body>
 </html>
-
-
